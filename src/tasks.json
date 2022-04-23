@@ -2,16 +2,55 @@
 	{
 		"task": 1,
 		"meta": {
-			"space": "closed",
-			"capacity": "neobval",
-			"matter": "ammiak",
-			"size": 100,
-			"distance": 1.7,
-			"workers": "opened",
+			"space": "opened",
+			"capacity": "obval",
+			"matter": "chlore",
+			"size": 50,
+			"distance": 2.9,
+			"workers": "hiding",
 			"peoples": "hiding"
 		},
 		"variants": [
-			1,2,3,4
+			{
+				"time": "day",
+				"weather": "yasno",
+				"temperature": 20,
+				"wind": 2,
+				"sizWorkers": 100,
+				"sizPeoples": 50,
+				"countWorkers": 120,
+				"countPeoples": 660
+			},
+			{
+				"time": "day",
+				"weather": "pasmurno",
+				"temperature": 10,
+				"wind": 7,
+				"sizWorkers": 60,
+				"sizPeoples": 0,
+				"countWorkers": 180,
+				"countPeoples": 500
+			},
+			{
+				"time": "night",
+				"weather": "yasno",
+				"temperature": -10,
+				"wind": 2,
+				"sizWorkers": 80,
+				"sizPeoples": 30,
+				"countWorkers": 150,
+				"countPeoples": 430
+			},
+			{
+				"time": "night",
+				"weather": "oblachno",
+				"temperature": 0,
+				"wind": 3,
+				"sizWorkers": 90,
+				"sizPeoples": 40,
+				"countWorkers": 400,
+				"countPeoples": 650
+			}
 		]
 	},
 	{
@@ -32,7 +71,7 @@
 				"temperature": -20,
 				"wind": 2,
 				"sizWorkers": 80,
-				"sizPeoles": 20,
+				"sizPeoples": 20,
 				"countWorkers": 160,
 				"countPeoples": 1500
 			},
@@ -42,7 +81,7 @@
 				"temperature": 10,
 				"wind": 2,
 				"sizWorkers": 90,
-				"sizPeoles": 0,
+				"sizPeoples": 0,
 				"countWorkers": 200,
 				"countPeoples": 1500
 			},
@@ -52,17 +91,17 @@
 				"temperature": 0,
 				"wind": 3,
 				"sizWorkers": 90,
-				"sizPeoles": 0,
+				"sizPeoples": 0,
 				"countWorkers": 350,
 				"countPeoples": 920
 			},
 			{
 				"time": "day",
 				"weather": "yasno",
-				"temperature": 10,
+				"temperature": 20,
 				"wind": 2,
 				"sizWorkers": 90,
-				"sizPeoles": 0,
+				"sizPeoples": 0,
 				"countWorkers": 400,
 				"countPeoples": 3600
 			}
@@ -71,16 +110,55 @@
 	{
 		"task": 3,
 		"meta": {
-			"space": "closed",
+			"space": "opened",
 			"capacity": "neobval",
-			"matter": "ammiak",
-			"size": 100,
-			"distance": 1.7,
+			"matter": "angidrit",
+			"size": 20,
+			"distance": 3,
 			"workers": "opened",
 			"peoples": "hiding"
 		},
 		"variants": [
-			1,2,3,4
+			{
+				"time": "night",
+				"weather": "yasno",
+				"temperature": 30,
+				"wind": 3,
+				"sizWorkers": 80,
+				"sizPeoples": 20,
+				"countWorkers": 160,
+				"countPeoples": 1500
+			},
+			{
+				"time": "day",
+				"weather": "oblachno",
+				"temperature": 20,
+				"wind": 1,
+				"sizWorkers": 90,
+				"sizPeoples": 0,
+				"countWorkers": 200,
+				"countPeoples": 1500
+			},
+			{
+				"time": "day",
+				"weather": "pasmurno",
+				"temperature": 10,
+				"wind": 5,
+				"sizWorkers": 90,
+				"sizPeoples": 0,
+				"countWorkers": 350,
+				"countPeoples": 920
+			},
+			{
+				"time": "night",
+				"weather": "oblachno",
+				"temperature": 0,
+				"wind": 0,
+				"sizWorkers": 90,
+				"sizPeoples": 0,
+				"countWorkers": 400,
+				"countPeoples": 3600
+			}
 		]
 	}
 ]

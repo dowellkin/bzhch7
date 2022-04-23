@@ -3,71 +3,67 @@ main.main
 	.container
 		.main__inner
 			.main__settings
-				.settings
-					.settings__title Настройки
-					.settings__body
-						.inp
-							.inp__title Задание
-							number-inp(v-model="task" min=1 max=3)
-						.inp
-							.inp__title Вариант
-							number-inp(v-model="variant" min=1 max=4)
+				settings
+				variant
+			.main__content
+				content
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import numberInp from './numberInp.vue'
-import tasks from '@/tasks.json'
-const params = new URLSearchParams(window.location.search);
-const taskInfo = {
-	value: +params.get('task') || 1,
-	min: 1,
-	max: tasks.length
-}
-if(taskInfo.value != +taskInfo.value || taskInfo.value > taskInfo.max || taskInfo.value < taskInfo.min){
-	taskInfo.value = 1;
-}
-let task = ref(taskInfo.value);
 
-const variantInfo = {
-	value: +params.get('variant') || 1,
-	min: 1,
-	max: tasks[task.value].variants.length
+
+<script>
+import tasks from '@/tasks.json'
+import numberInp from './numberInp.vue'
+import settings from './settings.vue'
+import variant from './variant.vue'
+import content from './content.vue'
+
+export default {
+	name: "body-view",
+	components: {
+		numberInp,
+		settings,
+		variant,
+		content
+	},
+	data: () => ({
+		tasks,
+	}),
+	created(){
+		const params = new URLSearchParams(window.location.search);
+		this.task =  +params.get('task') || 1;
+
+		if(this.task != +this.task || this.task > this.tasks.length || this.task < 1){
+			this.task = 1;
+		}
+
+		this.variant =  +params.get('variant') || 1;
+
+		if(this.variant != +this.variant || this.variant > this.tasks[this.task-1].variants.length || this.variant < 1){
+			this.variant = 1;
+		}
+
+		this.$store.commit('setTask', this.task);
+		this.$store.commit('setVariant', this.variant);
+	}
 }
-if(variantInfo.value != +variantInfo.value || variantInfo.value > variantInfo.max || variantInfo.value < variantInfo.min){
-	variantInfo.value = 1;
-}
-let variant = ref(variantInfo.value);
 </script>
 
 <style lang='sass'>
-@import "../main.sass"
 .main
 	padding-top: 20px
 
-.inp
-	display: flex
-	flex-direction: column
-	align-items: center
-
-	&:not(:last-child)
-		margin-right: 20px
-
-	&__title
-		margin-bottom: 5px
-		text-transform: uppercase
-		color: #fff
-		font-weight: 600
-
-.settings
-	padding-left: 20px
-	border-left: 2px solid $c-main
-	&__title
-		font-size: 36px
-		color: $c-main
-		font-weight: bold
-		margin-bottom: 25px
-
-	&__body
+	&__settings
 		display: flex
+		gap: 50px
+
+		@media (max-width: 768px)
+			flex-wrap: wrap
+
+		@supports not (gap: 20px)
+			.settings
+				margin-right: 50px
+
+				@media (max-width: 768px)
+					margin-bottom: 50px
 </style>

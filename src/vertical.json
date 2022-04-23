@@ -1,0 +1,42 @@
+{
+	"night": {
+		"yasno": {
+			"0.5": "inverison",
+			"0.6": "inverison",
+			"2.1": "inverison",
+			"4.1": "isotermion"
+		},
+		"oblachno": {
+			"0.5": "inverison",
+			"0.6": "inverison",
+			"2.1": "inverison",
+			"4.1": "isotermion"
+		},
+		"pasmurno": {
+			"0.5": "isotermion",
+			"0.6": "isotermion",
+			"2.1": "isotermion",
+			"4.1": "isotermion"
+		}
+	},
+	"day": {
+		"yasno": {
+			"0.5": "convection",
+			"0.6": "convection",
+			"2.1": "convection",
+			"4.1": "isotermion"
+		},
+		"oblachno": {
+			"0.5": "convection",
+			"0.6": "convection",
+			"2.1": "convection",
+			"4.1": "isotermion"
+		},
+		"pasmurno": {
+			"0.5": "isotermion",
+			"0.6": "isotermion",
+			"2.1": "isotermion",
+			"4.1": "isotermion"
+		}
+	}
+}

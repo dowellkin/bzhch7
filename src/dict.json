@@ -1,0 +1,20 @@
+{
+	"inverison": "инверсия",
+	"isotermion": "изотермия",
+	"convection": "конвекция",
+	"ammiak": "аммиак",
+	"chlore": "хлор",
+	"angidrit": "сернистый ангидрит",
+	"closed": "закрытая",
+	"opened": "открытая",
+
+	"peoples_opened": "на открытой местности",
+	"peoples_hiding": "в укрытии",
+
+	"yasno": "ясно",
+	"oblachno": "облачно",
+	"pasmurno": "пасмурно",
+
+	"day": "день",
+	"night": "ночь"
+}
