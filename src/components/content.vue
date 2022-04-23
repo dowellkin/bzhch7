@@ -53,14 +53,19 @@
 		p.
 			3 Строим график. По оси абсцисс откладываем {{getState.G}} км, по оси ординат – время, равное {{getState.time2}} ч. Соединяем точки А и Б прямой. Восстанавливаем перпендикуляр с точки, равной {{getState.distance}} км до пересечения с прямой АБ (точка В). Из точки В проводим прямую до оси ординат. Находим, что поражающее действие хлора на расстоянии {{getState.distance}} км от участка аварии составляет XX (хер пойми как считать это) ч
 		.picture
-			svg(width="300" height="300")
-				rect(width="1" height="300" style="fill: #fff")
-				rect(width="300" height="1" y="299" style="fill: #fff")
-				line(x1="1" y1="50" x2="250" y2="300" stroke="#42b883" stroke-width="2")
-				path(:d="`M${getState.coords.x} 299 ${getState.coords.x} 80 1 80`" fill="none" stroke="#C792EA" stroke-width="2" stroke-dasharray="8")
-				text(:x="1+15" :y="50-15" class="small" fill="#fff") {{getState.time2}} ч.
-				text(:x="250+10" :y="300-15" class="small" fill="#fff") {{getState.G}} км.
-			| Рисунок работает плохо, рисуйте сами
+			svg(width="300" height="300" :viewport="`0 0 ${svg.width} ${svg.height}`")
+				rect(width="1" :height="svg.height" style="fill: #fff")
+				rect(:width="svg.width" height="1" :y="svg.height-1" style="fill: #fff")
+				line(x1="1" y1="50" x2="250" :y2="svg.height" stroke="#42b883" stroke-width="2")
+				path(:d="`M${getState.coords.x} ${svg.height-1} ${getState.coords.x} ${calcY(getState.coords.y)} 1 ${calcY(getState.coords.y)}`" fill="none" stroke="#C792EA" stroke-width="2" stroke-dasharray="8")
+				text(:x="1+svg.textOffset" :y="50-svg.textOffset" class="small" fill="#fff") {{getState.time2}} ч.
+				text(:x="250+svg.textOffset" :y="300-svg.textOffset" class="small" fill="#fff") {{getState.G}} км.
+				text(:x="1+svg.textOffset" :y="calcY(getState.coords.y)-svg.textOffset" class="small" fill="#fff") {{getState.coords.smallY < 0 ? "0.1" : getState.coords.smallY.toFixed(2)}} ч.
+				text(:x="getState.coords.x+svg.textOffset" :y="300-svg.textOffset" class="small" fill="#fff") {{getState.distance}} км.
+			template(v-if="getState.coords.smallY < 0")
+				.gavno
+					| У тебя такое судя по всему из-за того, что Г меньше, чем расстояние до объекта или рубежа
+			| Рисунок работает норм, но рисуйте на свой страх и риск
 
 		span.content__subheader возможные потери и структура потерь #[b рабочих], попавшего в зону химического заражения
 		p.
@@ -89,6 +94,13 @@ import dict from "@/dict.json"
 
 export default {
 	name: 'content',
+	data: () => ({
+		svg: {
+			width: 300,
+			height: 300,
+			textOffset: 10
+		}
+	}),
 	computed: {
 		getVertical(){
 			return this.$store.getters['getVertical']
@@ -103,6 +115,13 @@ export default {
 	methods: {
 		translate(str){
 			return dict[str] ?? str
+		},
+		calcY(y){
+			let data = this.svg.height - y;
+			if(data < 0 || data > this.svg.height){
+				data = this.svg.height - 2;
+			}
+			return data;
 		}
 	}
 }
@@ -110,6 +129,9 @@ export default {
 
 <style lang="sass">
 @import "../main.sass"
+
+.gavno
+	color: #F07178
 
 .content
 	margin-top: 40px

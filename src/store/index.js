@@ -150,7 +150,11 @@ function calculate_3_1(state){
 
 function calculate_pictureCoords(state){
 	state.coords = {}
+
+	state.coords.smallY = -(state.time2 / state.G) * state.distance + state.time2
+
 	state.coords.x = 250 / state.G * state.distance
+	state.coords.y = -state.coords.x + 250
 }
 
 function calculate_4_1(state){
