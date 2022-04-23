@@ -1,0 +1,138 @@
+{
+	"night": {
+		"yasno": {
+			"0.5": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"0.6": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"2.1": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		},
+		"oblachno": {
+			"0.5": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"0.6": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"2.1": [
+				"inverison",
+				"inverison",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		},
+		"pasmurno": {
+			"0.5": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"0.6": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"2.1": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		}
+	},
+	"day": {
+		"yasno": {
+			"0.5": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"0.6": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"2.1": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		},
+		"oblachno": {
+			"0.5": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"0.6": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"2.1": [
+				"convection",
+				"convection",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		},
+		"pasmurno": {
+			"0.5": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"0.6": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"2.1": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			],
+			"4": [
+				"isotermion",
+				"isotermion",
+				"isotermion"
+			]
+		}
+	}
+}

@@ -1,0 +1,48 @@
+$c-main: #42b883
+
+
+body, html
+	margin: 0
+	padding: 0
+	height: 100%
+	
+#app
+	font-family: Avenir, Helvetica, Arial, sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	color: #2c3e50
+	height: 100%
+
+.task
+	height: 100%
+	background-color: #1a1a1a
+
+.container
+	max-width: 1400px
+	margin: 0 auto
+
+	@media (max-width: 1440px)
+		max-width: 728px
+
+	@media (max-width: 768px)
+		max-width: 100%
+		padding: 0 20px
+
+.header
+	background-color: #1a1a1a
+	padding: 20px 0
+	border-bottom: 1px solid #5454547a
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		color: #fff
+		font-weight: 500
+		font-size: 24px
+
+	&__small
+		font-size: 16px
+		opacity: .2

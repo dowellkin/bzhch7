@@ -1,0 +1,86 @@
+[
+	{
+		"task": 1,
+		"meta": {
+			"space": "closed",
+			"capacity": "neobval",
+			"matter": "ammiak",
+			"size": 100,
+			"distance": 1.7,
+			"workers": "opened",
+			"peoples": "hiding"
+		},
+		"variants": [
+			1,2,3,4
+		]
+	},
+	{
+		"task": 2,
+		"meta": {
+			"space": "closed",
+			"capacity": "neobval",
+			"matter": "ammiak",
+			"size": 100,
+			"distance": 1.7,
+			"workers": "opened",
+			"peoples": "hiding"
+		},
+		"variants": [
+			{
+				"time": "night",
+				"weather": "pasmurno",
+				"temperature": -20,
+				"wind": 2,
+				"sizWorkers": 80,
+				"sizPeoles": 20,
+				"countWorkers": 160,
+				"countPeoples": 1500
+			},
+			{
+				"time": "day",
+				"weather": "pasmurno",
+				"temperature": 10,
+				"wind": 2,
+				"sizWorkers": 90,
+				"sizPeoles": 0,
+				"countWorkers": 200,
+				"countPeoples": 1500
+			},
+			{
+				"time": "night",
+				"weather": "oblachno",
+				"temperature": 0,
+				"wind": 3,
+				"sizWorkers": 90,
+				"sizPeoles": 0,
+				"countWorkers": 350,
+				"countPeoples": 920
+			},
+			{
+				"time": "day",
+				"weather": "yasno",
+				"temperature": 10,
+				"wind": 2,
+				"sizWorkers": 90,
+				"sizPeoles": 0,
+				"countWorkers": 400,
+				"countPeoples": 3600
+			}
+		]
+	},
+	{
+		"task": 3,
+		"meta": {
+			"space": "closed",
+			"capacity": "neobval",
+			"matter": "ammiak",
+			"size": 100,
+			"distance": 1.7,
+			"workers": "opened",
+			"peoples": "hiding"
+		},
+		"variants": [
+			1,2,3,4
+		]
+	}
+]
