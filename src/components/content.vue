@@ -79,7 +79,7 @@
 
 		span.content__subheader возможные потери и структура потерь #[b населения], попавшего в зону химического заражения
 		p.
-			1 В соответствии с таблицей 8 потери рабочих и служащих при {{variant.sizPeoples}}% обеспечении противогазами составят {{getState.damagepeoplesPercent}}%:
+			1 В соответствии с таблицей 8 потери рабочих и служащих при {{variant.sizPeoples}}% обеспечении противогазами составят {{getState.damagePeoplesPercent}}%:
 		p.content__formula.
 			{{variant.countPeoples}} : 100 • {{getState.damagePeoplesPercent}} = {{getState.damagePeoples}} человек(а).
 		p.
