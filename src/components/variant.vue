@@ -31,10 +31,10 @@
 			span.dd__value {{variant.wind}} м/с
 		.dd__field
 			span СИЗ работников: 
-			span.dd__value {{variant.sizWorkers}}
+			span.dd__value {{variant.sizWorkers}}%
 		.dd__field
 			span СИЗ населения: 
-			span.dd__value {{variant.sizPeoles}}
+			span.dd__value {{variant.sizPeoples}}%
 		.dd__field
 			span Количество работников: 
 			span.dd__value {{variant.countWorkers}}
