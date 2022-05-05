@@ -15,7 +15,7 @@
 				"time": "day",
 				"weather": "yasno",
 				"temperature": 20,
-				"wind": 2,
+				"wind": 3,
 				"sizWorkers": 100,
 				"sizPeoples": 50,
 				"countWorkers": 120,
@@ -70,8 +70,8 @@
 				"weather": "pasmurno",
 				"temperature": -20,
 				"wind": 2,
-				"sizWorkers": 80,
-				"sizPeoples": 20,
+				"sizWorkers": 90,
+				"sizPeoples": 0,
 				"countWorkers": 160,
 				"countPeoples": 1500
 			},
@@ -80,18 +80,18 @@
 				"weather": "pasmurno",
 				"temperature": 10,
 				"wind": 2,
-				"sizWorkers": 90,
-				"sizPeoples": 0,
+				"sizWorkers": 80,
+				"sizPeoples": 20,
 				"countWorkers": 200,
-				"countPeoples": 1500
+				"countPeoples": 2300
 			},
 			{
 				"time": "night",
 				"weather": "oblachno",
 				"temperature": 0,
 				"wind": 3,
-				"sizWorkers": 90,
-				"sizPeoples": 0,
+				"sizWorkers": 70,
+				"sizPeoples": 30,
 				"countWorkers": 350,
 				"countPeoples": 920
 			},
@@ -100,7 +100,7 @@
 				"weather": "yasno",
 				"temperature": 20,
 				"wind": 2,
-				"sizWorkers": 90,
+				"sizWorkers": 100,
 				"sizPeoples": 0,
 				"countWorkers": 400,
 				"countPeoples": 3600
@@ -124,40 +124,40 @@
 				"weather": "yasno",
 				"temperature": 30,
 				"wind": 3,
-				"sizWorkers": 80,
-				"sizPeoples": 20,
-				"countWorkers": 160,
-				"countPeoples": 1500
+				"sizWorkers": 70,
+				"sizPeoples": 0,
+				"countWorkers": 250,
+				"countPeoples": 200
 			},
 			{
 				"time": "day",
 				"weather": "oblachno",
 				"temperature": 20,
 				"wind": 1,
-				"sizWorkers": 90,
-				"sizPeoples": 0,
-				"countWorkers": 200,
-				"countPeoples": 1500
+				"sizWorkers": 80,
+				"sizPeoples": 30,
+				"countWorkers": 480,
+				"countPeoples": 180
 			},
 			{
 				"time": "day",
 				"weather": "pasmurno",
 				"temperature": 10,
 				"wind": 5,
-				"sizWorkers": 90,
-				"sizPeoples": 0,
-				"countWorkers": 350,
-				"countPeoples": 920
+				"sizWorkers": 60,
+				"sizPeoples": 40,
+				"countWorkers": 330,
+				"countPeoples": 370
 			},
 			{
 				"time": "night",
 				"weather": "oblachno",
 				"temperature": 0,
-				"wind": 0,
-				"sizWorkers": 90,
+				"wind": 2,
+				"sizWorkers": 100,
 				"sizPeoples": 0,
-				"countWorkers": 400,
-				"countPeoples": 3600
+				"countWorkers": 600,
+				"countPeoples": 120
 			}
 		]
 	}
